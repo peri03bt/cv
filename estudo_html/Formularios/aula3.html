@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula3</title>
+</head>
+<body>
+    <h2><p>Aula 3 - Checkbox e Radio</p></h2>
+    <form method="post">
+        <h3>Você Selecionou: <strong>Pizza Calabresa</strong></h3>
+        <p>Quais Opcionais você deseja?</p>
+        <!--esse colchetes faz com que a back-end receba uma lista com todas opções selecionadas-->
+        <input type="checkbox" name="opcional[]" value="queijo"/> extra queijo<br>
+        <input type="checkbox" name="opcional[]" value="queijo"/> extra calabresa<br>
+        <input type="checkbox" name="opcional[]" value="queijo"/> extra cebola<br>
+        <!--desabled deixa desabilitado esse campo-->
+        <input type="checkbox" disabled name="opcional[]" value="queijo"/> extra azeitona<br>
+
+        <p>Borda recheada?</p>
+        <input type="radio" name="recheio" value="sim"/>Sim<br>
+        <input type="radio" name="recheio" value="nao"/>Não<br>
+
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco"/>Suco<br>
+        <input type="radio" name="bebida" value="refrigerante"/>Refrigerante<br>
+        <input type="radio" name="bebida" value="agua"/>Água<br>
+        <input type="radio" name="bebida" value="nenhum"/>Nenhum<br>
+
+        <button type="submit">Enviar pedido</button>
+    </form>
+</body>
+</html>

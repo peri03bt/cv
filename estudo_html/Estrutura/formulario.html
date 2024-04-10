@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <h2>Formulário para estudo</h2>
+    <form name="estudo" method="get" onsubmit="alert ('Dseja enviar formulário?')" target="_self">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="row">
+                <label for="nome">Nome Completo</label><input type="text" id="nome" name="nome"/>
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Pessoais 2</legend>
+            <div class="row">
+                <label for="profissao">Profissão</label><input type="text" name="profissao" id="profissao">
+                <label for="email">E-mail</label><input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="row">
+                <label>Endereço</label><input type="text" />
+                <label>CEP</label><input type="text" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Redes Sociais</legend>
+            <div class="row">
+                <label>Linkedin</label><input type="text" />
+                <label>GitHub</label><input type="text" />
+            </div>
+        </fieldset>
+        <div class="row">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+        <div>
+            <!--Elemento externos invocados no html-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7901.584859091731!2d-34.9842436651123!3d-8.0203278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1712674895147!5m2!1sen!2sbr" width="400" height="300" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--    
+                <iframe
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=latitude,longitude&key=SuaChaveAqui"
+                allowfullscreen>
+                </iframe>
+            -->
+
+            <!--
+                Substitua latitude e longitude pelas coordenadas da localização onde deseja adicionar o marcador. Além disso, substitua SuaChaveAqui pela sua chave de API do Google Maps.
+            -->
+
+            <!--
+                <iframe
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?q=40.689247,-74.044502&key=SuaChaveAqui"
+                allowfullscreen>
+                </iframe>
+
+            -->
+        </div>
+        <!--<div>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/g4T9C7TFfP8?si=mvuzidIva_27rpIB&amp;start=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>-->
+    </form>
+</body>
+</html>

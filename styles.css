@@ -1,0 +1,32 @@
+/* styles.css */
+
+/* Estilo para a classe div-dot */
+.div-dot {
+    color: blue; /* Mudando a cor do texto dentro da tag <div> */
+}
+
+/* Estilo para a classe span-dot */
+.span-dot {
+    color: red; /* Mudando a cor do texto dentro da tag <span> */
+}
+
+/* Estilos para a classe 'row' */
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos para as labels dos formulários dentro da classe 'row' */
+.row label {
+    margin-right: 10px; /* Espaçamento à direita entre as labels e os campos de entrada */
+    font-weight: bold; /* Deixa o texto das labels em negrito */
+    color: #333; /* Cor do texto das labels */
+    width: 70px; /* Largura fixa para todas as labels (ajuste conforme necessário) */
+}
+fieldset {
+    margin: 15px 0;
+    border-radius: 10px;
+    border-color: lightgray;
+}
